@@ -1,5 +1,5 @@
 Package.describe({
-    summary: "Easily include ace, receive reactive varibles for cursor position, editor contents, etc. Inspired by Madeye's reactive-ace project but updated for Meteor 0.9.1",
+    summary: "Easily include ace, receive reactive varibles for cursor position, editor contents, etc.",
     version: "1.0.0",
     git: "https://github.com/wollardj/meteor-reactive-ace.git",
     name: "wollardj:ace"
