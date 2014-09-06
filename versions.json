@@ -1,6 +1,10 @@
 {
   "dependencies": [
     [
+      "coffeescript",
+      "1.0.2"
+    ],
+    [
       "meteor",
       "1.0.3"
     ],
