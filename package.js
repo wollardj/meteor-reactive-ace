@@ -8,7 +8,7 @@ Package.describe({
 
 path = Npm.require("path");
 fs = Npm.require("fs");
-packagePath = path.join(path.resolve('.'), 'packages', 'wollardj:ace')
+packagePath = path.resolve('.')
 
 Package.onUse(function(api) {
     api.versionsFrom('METEOR@0.9.1');
