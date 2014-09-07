@@ -17,6 +17,7 @@ if ( fs.existsSync(path.join(packagePath, 'packages')) ) {
 
 
 Package.onUse(function(api) {
+    aceBuildPath = path.join('ace-builds', 'src-min')
     api.versionsFrom('METEOR@0.9.1');
     api.use("coffeescript");
     api.use("standard-app-packages");
