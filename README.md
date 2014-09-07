@@ -32,17 +32,17 @@ editor.setValue("Sooper!");
   - `getInstance()`: returns the instance of MandrillAce that was created when you embedded the template somewhere (`{{>mandrill_ace}}`)
 
 #### Instance Methods
-  - `detectMode(path)`: Compares the file extension of the `path` (a string object) given and attempts to set Ace's syntext highlighting mode to the correct type. Since this is for the Mandrill project, which deals almost entirely with XML files, it falls back to XML when the type can't be determined.
-  - `value()`: a reactive way to obtain the current text within the Ace editor
-  - `setValue(aString)`: shortcut to replacing the body of the current editor. A call to this method will set `hasChanges()` to `false`.
+  - `detectMode(path)`: Compares the file extension of the `path` (a string object) given against a list a map of extensions and modes and attempts to set Ace's syntaxt highlighting mode correctly. Since this is for the Mandrill project, which deals almost entirely with XML files, it falls back to XML when the type can't be determined.
   - `hasChanges()`: reactive boolean indicating whether the user has modified the original text.
-  - `theme()`: reactive string containing the current theme Ace is using.
-  - `setTheme(someTheme)`: Tells Ace to use `someTheme`
-  - `mode()`: reactive string indicating the current mode Ace is using for syntaxt checking and highlighting.
-  - `setMode(someMode)`: Tells Ace to use `someMode` for syntax checking and highlighting
-  - `readOnly()`: reactive bool; _is ace is read-only mode or no?_
-  - `setReadOnly(aBool)`: _picking up on a pattern yet?_
   - `isFocused()`: a reactive boolean. There is no isBlurred method because the reactivity involved ends up making that  unneccessary.
+  - `mode()`: reactive string indicating the current mode Ace is using for syntaxt checking and highlighting.
+  - `readOnly()`: reactive bool; _is ace is read-only mode or no?_
+  - `setValue(aString)`: shortcut to replacing the body of the current editor. A call to this method will set `hasChanges()` to `false`.
+  - `theme()`: reactive string containing the current theme Ace is using.
+  - `setMode(someMode)`: Tells Ace to use `someMode` for syntax checking and highlighting
+  - `setReadOnly(aBool)`: _picking up on a pattern yet?_
+  - `setTheme(someTheme)`: Tells Ace to use `someTheme`
+  - `value()`: a reactive way to obtain the current text within the Ace editor
 
 ## What Good Is Reactivity With Ace?
 
